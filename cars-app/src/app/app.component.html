@@ -1,0 +1,216 @@
+<header class="header">
+  <div class="div container">
+      <div class="logo">
+  <img src="img/logo-1.png" alt="logo">
+      </div>
+      <nav class="menu">
+          <ul>
+              <li class="menu-item">
+                  <a href="#">Главная</a>
+              </li>
+              <li class="menu-item">
+                  <a href="#">Автомобили</a>
+              </li>
+              <li class="menu-item">
+                  <a href="#">Бронирование авто</a>
+              </li>
+          </ul>
+      </nav>
+  </div>
+      </header>
+  <section class="main" [ngStyle]="bgPos">
+  <div class="container">
+      <div class="div main-info">
+          <h1 class="main-title">Аренда премиальных автомобилей</h1>
+          <div class="div main-text">
+              В нашем клубе имеется солидная коллекция спортивных автомобилей — от достаточно распространенных серийных машин до настоящего гоночного эксклюзива. Воспользуйтесь уникальной возможностью побывать за рулем настоящей легенды и узнать, на что она способна за пределами гоночной трассы!
+          </div>
+          <div class="main-action">
+              <button class="button" id="main-action" (click)="goScroll(cars)">Посмотреть автомобили</button>
+          </div>
+      </div>
+  </div>
+  </section>
+
+  <section class="car" id="cars" #cars>
+  <div class="container">
+      <h2 class="sub-title">Наш автопарк</h2>
+  <div class="car-items">
+      <div class="car-item">
+              <div class="car-item-image">
+                  <img src="img/1.png" alt="Lamborghini Huracan Spyder">
+              </div>
+              <div class="car-item-title">Lamborghini Huracan Spyder</div>
+      <div class="car-item-info">
+                  <div class="car-item-point">
+                      <img src="img/gear.png" alt="gear">
+                      <div>Привод</div>
+                      <div>полный</div>
+                  </div>
+                  <div class="car-item-point">
+                          <img src="img/wheel.png" alt="wheel">
+                          <div>Двигатель</div>
+                          <div>5.2 л.с.</div>
+                      </div>
+                  <div class="car-item-point">
+                      <img src="img/belt.png" alt="Belt">
+                      <div>Кол-во мест</div>
+                      <div>2</div>
+                  </div>
+      </div>
+  <div class="car-item-action">
+      <button class="button car-button" (click)="goScroll(price, car)>Зaбронировать</button></div>
+      </div>
+
+
+      <div class="car-item">
+              <div class="car-item-image">
+                  <img src="img/2.png" alt="Ferrari California">
+              </div>
+              <div class="car-item-title">Ferrari California</div>
+      <div class="car-item-info">
+                  <div class="car-item-point">
+                      <img src="img/gear.png" alt="gear">
+                      <div>Привод</div>
+                      <div>полный</div>
+                  </div>
+                  <div class="car-item-point">
+                          <img src="img/wheel.png" alt="wheel">
+                          <div>Двигатель</div>
+                          <div>3.9 л.с.</div>
+                      </div>
+                  <div class="car-item-point">
+                      <img src="img/belt.png" alt="Belt">
+                      <div>Кол-во мест</div>
+                      <div>4</div>
+                  </div>
+      </div>
+  <div class="car-item-action">
+      <button class="button car-button" (click)="goScroll(price, car) >Зaбронировать</button></div>
+      </div>
+
+      <div class="car-item">
+              <div class="car-item-image">
+                  <img src="img/3.png" alt="Lamborghini Urus">
+              </div>
+              <div class="car-item-title">Lamborghini Urus</div>
+      <div class="car-item-info">
+                  <div class="car-item-point">
+                      <img src="img/gear.png" alt="gear">
+                      <div>Привод</div>
+                      <div>полный</div>
+                  </div>
+                  <div class="car-item-point">
+                          <img src="img/wheel.png" alt="wheel">
+                          <div>Двигатель</div>
+                          <div>4.0 л.с.</div>
+                      </div>
+                  <div class="car-item-point">
+                      <img src="img/belt.png" alt="Belt">
+                      <div>Кол-во мест</div>
+                      <div>5</div>
+                  </div>
+      </div>
+  <div class="car-item-action">
+      <button class="button car-button" (click)="goScroll(price, car)>Зaбронировать</button></div>
+      </div>
+      <div class="car-item">
+          <div class="car-item-image">
+              <img src="img/4.png" alt="Audi R8">
+          </div>
+          <div class="car-item-title">Audi R8</div>
+  <div class="car-item-info">
+              <div class="car-item-point">
+                  <img src="img/gear.png" alt="gear">
+                  <div>Привод</div>
+                  <div>полный</div>
+              </div>
+              <div class="car-item-point">
+                      <img src="img/wheel.png" alt="wheel">
+                      <div>Двигатель</div>
+                      <div>5.2 л.с.</div>
+                  </div>
+              <div class="car-item-point">
+                  <img src="img/belt.png" alt="Belt">
+                  <div>Кол-во мест</div>
+                  <div>2</div>
+              </div>
+  </div>
+  <div class="car-item-action">
+  <button class="button car-button" (click)="goScroll(price, car)>Зaбронировать</button></div>
+  </div>
+  <div class="car-item">
+      <div class="car-item-image">
+          <img src="img/7.png" alt="Chevrolet Camaro">
+      </div>
+      <div class="car-item-title">Chevrolet Camaro</div>
+  <div class="car-item-info">
+          <div class="car-item-point">
+              <img src="img/gear.png" alt="gear">
+              <div>Привод</div>
+              <div>полный</div>
+          </div>
+          <div class="car-item-point">
+                  <img src="img/wheel.png" alt="wheel">
+                  <div>Двигатель</div>
+                  <div>2.0 л.с.</div>
+              </div>
+          <div class="car-item-point">
+              <img src="img/belt.png" alt="Belt">
+              <div>Кол-во мест</div>
+              <div>4</div>
+          </div>
+  </div>
+  <div class="car-item-action">
+  <button class="button car-button"(click)="goScroll(price, car)>Зaбронировать</button></div>
+  </div>
+  <div class="car-item">
+      <div class="car-item-image">
+          <img src="img/6.png" alt="Lamborghini Huracan Spyder">
+      </div>
+      <div class="car-item-title">Lamborghini Huracan Spyder</div>
+  <div class="car-item-info">
+          <div class="car-item-point">
+              <img src="img/gear.png" alt="gear">
+              <div>Привод</div>
+              <div>полный</div>
+          </div>
+          <div class="car-item-point">
+                  <img src="img/wheel.png" alt="wheel">
+                  <div>Двигатель</div>
+                  <div>2.0 л.с.</div>
+              </div>
+          <div class="car-item-point">
+              <img src="img/belt.png" alt="Belt">
+              <div>Кол-во мест</div>
+              <div>4</div>
+          </div>
+  </div>
+  <div class="car-item-action">
+  <button class="button car-button"(click)="goScroll(price, car)>Зaбронировать</button></div>
+  </div>
+  </div>
+  </section>
+  <section class="price" id="price" #price>
+  <div class="container">
+      <h2 class="sub-title">Узнать цену и забронировать</h2>
+      <div class="price-text">Заполните данные, и мы перезвоним вам для уточнения всех деталей бронирования</div>
+      <form action="" class="price-form" [[formGroup]="priceForm"]>
+          <input type="text" class="price-input" id="name" placeholder="Ваше имя" formControlName="name">
+          <input type="text" class="price-input" id="phone" placeholder="Ваш телефон" formControlName="phone">
+          <input type="text" class="price-input" id="car" placeholder="Автомобиль, который вас интересует" formControlName="car">
+          <button class="button" type="button" id="price-action" (click="onSubmit" [disabled="!price-Form.valid"])>Узнать цену</button>
+      </form>
+      <img src="img/rolls.png" alt="rolls" class="price-image" [ngStyle]="trans">
+  </div>
+  </section>
+  <footer class="footer">
+  <div class="container">
+      <div class="logo">
+          <img src="img/logo-1.png" alt="logo">
+              </div>
+      <div class="rights">Все права защищены</div>
+  </div>
+  </footer>
+
+
